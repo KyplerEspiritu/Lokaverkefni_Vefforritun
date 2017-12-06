@@ -27,20 +27,17 @@ def send_static(filename):
 
 @route('/')
 def sign_in():
-    try:
-        cur.execute('SELECT * FROM USER')
-        users = cur.fetchall()
+      cur.execute('SELECT * FROM USER')
+      users = cur.fetchall()
 
-        notenda_listi = []
-        for i, x in users:
-            notenda_listi.append([i, x])
+      notenda_listi = []
+      for i, x in users:
+          notenda_listi.append([i, x])
 
-        if len(notenda_listi) == 0:
-            cur.execute('INSERT INTO USER VALUES("kypler", "admin")')
+      if len(notenda_listi) == 0:
+          cur.execute('INSERT INTO USER VALUES("kypler", "admin")')
 
-        return template('sign_in.tpl')
-    except pymysql.InterfaceError:
-        pass
+      return template('sign_in.tpl')
 
 @route('/', method='POST')
 def sign_in_info():
