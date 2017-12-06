@@ -5,6 +5,7 @@
 
 from bottle import *
 from ftfy import fix_encoding
+from sys import argv
 import pymysql
 
 db = pymysql.connect(host="tsuts.tskoli.is",
@@ -124,4 +125,4 @@ def minar_sidur():
 
 
 
-run(host='localhost', port=8080, reloader=True, debug=True)
+run(host='0.0.0.0', port=argv[1], reloader=True, debug=True)
