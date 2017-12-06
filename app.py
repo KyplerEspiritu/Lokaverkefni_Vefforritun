@@ -11,9 +11,7 @@ import pymysql
 db = pymysql.connect(host="tsuts.tskoli.is",
                      user="2910003120",
                      passwd="kypler00",
-                     db="2910003120_vef2lokaverk",
-                     charset="utf8",
-                     use_unicode=True)
+                     db="2910003120_vef2lokaverk")
 
 
 cur = db.cursor()
@@ -27,8 +25,11 @@ def send_static(filename):
 
 @route('/')
 def sign_in():
-      cur.execute('SELECT * FROM USER')
-      users = cur.fetchall()
+      try:
+        cur.execute('SELECT * FROM USER')
+        users = cur.fetchall()
+    except (pymysql.InterfaceError):
+        pass
 
       notenda_listi = []
       for i, x in users:
