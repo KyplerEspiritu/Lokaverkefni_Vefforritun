@@ -5,7 +5,6 @@
 
 from bottle import *
 from ftfy import fix_encoding
-from sys import argv
 import pymysql
 
 db = pymysql.connect(host="tsuts.tskoli.is",
@@ -117,7 +116,7 @@ def minar_sidur():
 
     listi = []
     for i, x in orders:
-        listi.append([i, fix_encoding(x.encode('latin-1').decode('utf-8'))])
+        listi.append([i, x.encode('latin-1').decode('utf-8')])
 
     return template('minar_sidur.tpl', data=listi, nafn=signinUser)
 
