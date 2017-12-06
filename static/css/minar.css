@@ -1,0 +1,117 @@
+body{
+	font-family: Arial;
+	overflow: hidden;
+	background-image: url('http://wallsdesk.com/wp-content/uploads/2016/09/Space-HD.jpg');
+}
+nav{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	background: #0d0026;
+	color: white;
+	padding: 15px;
+	z-index: 1;
+	opacity: 1;
+}
+div.logout_takki{
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	z-index: 2;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-size: 2em;
+	color: white;
+}
+div.first_last{
+	margin: 0 auto;
+	max-width: 70%;
+}
+img.logo{
+	position: relative;
+	width: 120px;
+	height: 100px;
+	top: 0%;
+}
+div.first{
+	font-weight: bold;
+	float: left;
+	width: 60%;
+	font-size: 2.5em;
+}
+div.mid{
+	float: left;
+	width: 15%;
+	text-align: center;
+	padding-bottom: 26.5px;
+	padding-top: 26.5px;
+}
+.minar_sidur_takki{
+	padding: 19px;
+	font-weight: bold;
+}
+div.last{
+	float: left;
+	text-align: center;
+	width: 20%;
+	padding: 26.5px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.panta_takki{
+    text-decoration: none;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	background: #9156ff;
+	border-radius: 10px;
+	font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+article{
+	padding-top: 140px;
+	background: rgba(231, 206, 255, 0.8);
+	margin: 0 auto;
+	max-width: 30%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+header{
+	font-size: 2em;
+	text-align: center;
+	font-weight: bold;
+}
+section{
+	line-height: 25px;
+}
+img.pizza{
+	position: fixed;
+	left: -25%;
+	bottom: -15%;
+	height: 750px;
+	width: 750px;
+}
+table{
+	border-collapse: collapse;
+	width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #6a00ff;
+}
+td{
+	padding: 15px;
+	border-bottom: 1px solid black;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

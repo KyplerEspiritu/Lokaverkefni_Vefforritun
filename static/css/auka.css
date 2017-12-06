@@ -1,0 +1,66 @@
+body{
+    padding-top: 50px;
+    text-align: center;
+}
+
+nav{
+	width: 100%;
+	font-family: Arial;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background: #333;
+	color: white;
+	text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+ul {
+	margin: 0;
+    list-style-type: none;
+}
+
+li{
+	display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+img{
+    height: 250px;
+    width: 250px;
+}
+
+.fade_in_message{
+	animation-name: fade;
+	animation-delay: 3s;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
