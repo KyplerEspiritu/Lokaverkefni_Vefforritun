@@ -4,7 +4,7 @@
 
 
 from bottle import *
-from ftfy import fix_encoding
+from sys import argv
 import pymysql
 
 db = pymysql.connect(host="tsuts.tskoli.is",
